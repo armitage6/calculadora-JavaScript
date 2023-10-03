@@ -1,0 +1,124 @@
+html {
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = a 10 pixeles*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+
+    font-size: 1.6rem;
+    line-height: 2;
+    height: 100vh;
+}
+
+
+
+
+
+/*main*/
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*input*/
+.container .valu-number input {
+    border: 1px solid #ab49cc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: .6rem;
+    font-size: 2rem;
+}
+
+
+/*operaciones*/
+.container .operaciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .operaciones button {
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    font-size: 2rem;
+    background-color: #ab49cc;
+    color: #FFF;
+    transition: background-color .3s ease-out;
+}
+
+.container .operaciones button:hover {
+
+    background-color: #8e3baa;
+    cursor: pointer;
+}
+
+
+
+.container .operaciones button:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container .operaciones button:nth-child(6) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.container .operaciones button:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container .operaciones button:nth-child(8) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/*Resultado*/
+
+.container .resultado input {
+    border: 1px solid #ab49cc;
+    width: 100%;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: .6rem;
+    margin: 3rem 0;
+}
+
+/*operaciones de redondiar*/
+
+
+.container .operaciones-redondiar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.container .operaciones-redondiar button {
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    background-color: #ab49cc;
+    color: #FFF;
+    font-size: 2rem;
+    transition: background-color .3s ease-out;
+}
+
+
+.container .operaciones-redondiar button:hover {
+
+    background-color: #8e3baa;
+    cursor: pointer;
+}
